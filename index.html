@@ -1,385 +1,594 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zamonaviy Landing</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.css" />
-  <style>
-    body{background:linear-gradient(135deg,#0f172a,#1e293b);} /* premium dark gradient */
-    /* subtle card glow */
-    .glow {
-      box-shadow: 0 8px 30px rgba(99,102,241,0.08), 0 2px 10px rgba(14,165,233,0.04);
-      transition: transform .35s ease, box-shadow .35s ease;
-    }
-    .glow:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 20px 50px rgba(99,102,241,0.12); }
-    /* partner logo grayscale -> color on hover */
-    .logo { filter: grayscale(100%); opacity: .75; transition: filter .35s ease, opacity .35s ease, transform .35s ease; }
-    .logo:hover { filter: none; opacity: 1; transform: scale(1.05); }
-  </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Zamonaviy Landing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.css"/>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        /* premium dark gradient */
+        /* subtle card glow */
+        .glow {
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.08), 0 2px 10px rgba(14, 165, 233, 0.04);
+            transition: transform .35s ease, box-shadow .35s ease;
+        }
+
+        .glow:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 20px 50px rgba(99, 102, 241, 0.12);
+        }
+
+        /* partner logo grayscale -> color on hover */
+        .logo {
+            filter: grayscale(100%);
+            opacity: .75;
+            transition: filter .35s ease, opacity .35s ease, transform .35s ease;
+        }
+
+        .logo:hover {
+            filter: none;
+            opacity: 1;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body class="text-gray-200 antialiased">
 
 <!-- NAVBAR (unchanged) -->
 <nav class="fixed top-0 left-0 w-full backdrop-blur bg-white/10 border-b border-white/10 shadow-lg z-50">
-  <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
-    <div class="text-2xl font-bold text-cyan-400">LOGO</div>
-    <div class="hidden md:flex space-x-8 text-lg">
-      <a href="#intro" class="hover:text-cyan-400">Intro</a>
-      <a href="#xodimlar" class="hover:text-cyan-400">Xodimlar</a>
-      <a href="#hamkor" class="hover:text-cyan-400">Hamkorlar</a>
-      <a href="#havolalar" class="hover:text-cyan-400">Havolalar</a>
-      <a href="#nizom" class="hover:text-cyan-400">Nizom</a>
-      <a href="#contact" class="hover:text-cyan-400">Bogʻlanish</a>
+    <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+        <div class="text-2xl font-bold text-cyan-400">
+            <a href="index.html"><img src="logo.png" alt="logo" width="60"></a>
+        </div>
+        <div class="hidden md:flex space-x-8 text-lg">
+            <a href="#intro" class="hover:text-cyan-400">Intro</a>
+            <a href="#xodimlar" class="hover:text-cyan-400">Xodimlar</a>
+            <a href="#hamkor" class="hover:text-cyan-400">Hamkorlar</a>
+            <a href="#havolalar" class="hover:text-cyan-400">Havolalar</a>
+            <a href="#nizom" class="hover:text-cyan-400">Nizom</a>
+            <a href="#contact" class="hover:text-cyan-400">Bogʻlanish</a>
+            <a href="#yangiliklar" class="hover:text-cyan-400">Yangiliklar</a>
+        </div>
     </div>
-  </div>
 </nav>
 
 <!-- INTRO (unchanged) -->
 <section id="intro" class="relative min-h-screen flex items-center justify-center pt-16">
-  <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80" class="absolute inset-0 w-full h-full object-cover opacity-70" />
-  <div class="absolute inset-0 bg-gradient-to-br from-cyan-600/40 to-indigo-700/40 backdrop-blur-sm"></div>
-  <div class="relative text-center text-white px-6">
-    <h1 class="text-6xl font-extrabold drop-shadow-2xl">Zamonaviy Platforma</h1>
-    <p class="text-2xl mt-6 opacity-90">Eng oxirgi UI/UX standartlari asosida</p>
-    <button class="mt-10 px-10 py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-full transition">Boshlash</button>
-  </div>
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80"
+         class="absolute inset-0 w-full h-full object-cover opacity-70"/>
+    <div class="absolute inset-0 bg-gradient-to-br from-cyan-600/40 to-indigo-700/40 backdrop-blur-sm"></div>
+    <div class="relative text-center text-white px-6">
+        <h1 class="text-6xl font-extrabold drop-shadow-2xl">Zamonaviy Platforma</h1>
+        <p class="text-2xl mt-6 opacity-90">Eng oxirgi UI/UX standartlari asosida</p>
+        <button class="mt-10 px-10 py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-full transition">
+            Boshlash
+        </button>
+    </div>
+</section>
+
+<!-- ===================== YANGILIKLAR (NEWS) ===================== -->
+<section id="yangiliklar" class="py-20 bg-white/5 border-y border-white/10 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-4xl font-bold mb-0 text-cyan-300">Yangiliklar</h2>
+            <p class="text-gray-300">Soʻnggi yangiliklar</p>
+        </div>
+
+        <div class="relative">
+            <div class="swiper newsSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <article
+                            class="swiper-slide bg-gradient-to-br from-white/6 to-white/3 rounded-2xl p-6 border border-white/6 glow">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80"
+                             alt="Yangilik 1" class="w-full h-40 object-cover rounded-xl mb-4">
+                        <div class="text-sm text-cyan-300 font-semibold mb-1">E'lon</div>
+                        <h3 class="text-xl font-bold mb-2">Yangi xizmatimiz ishga tushdi</h3>
+                        <p class="text-gray-300 text-sm mb-4">Mahsulotimizning yangi funksiyasi — mijozlar uchun
+                            qulaylik va tezkor xizmat ko'rsatishni ta'minlaydi.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-400">2025-11-28</span>
+                            <a href="#" class="text-cyan-300 font-semibold">Batafsil →</a>
+                        </div>
+                    </article>
+
+                    <!-- Slide 2 -->
+                    <article
+                            class="swiper-slide bg-gradient-to-br from-white/6 to-white/3 rounded-2xl p-6 border border-white/6 glow">
+                        <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&q=80"
+                             alt="Yangilik 2" class="w-full h-40 object-cover rounded-xl mb-4">
+                        <div class="text-sm text-cyan-300 font-semibold mb-1">Maqola</div>
+                        <h3 class="text-xl font-bold mb-2">UX tadqiqotlari yillik hisobot</h3>
+                        <p class="text-gray-300 text-sm mb-4">Biz o'tkazgan tadqiqotlar va natijalar asosida ishlab
+                            chiqilgan tavsiyalar.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-400">2025-11-20</span>
+                            <a href="#" class="text-cyan-300 font-semibold">Batafsil →</a>
+                        </div>
+                    </article>
+
+                    <!-- Slide 3 -->
+                    <article
+                            class="swiper-slide bg-gradient-to-br from-white/6 to-white/3 rounded-2xl p-6 border border-white/6 glow">
+                        <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?auto=format&fit=crop&w=1200&q=80"
+                             alt="Yangilik 3" class="w-full h-40 object-cover rounded-xl mb-4">
+                        <div class="text-sm text-cyan-300 font-semibold mb-1">E'lon</div>
+                        <h3 class="text-xl font-bold mb-2">Trening: Accessibility & Performance</h3>
+                        <p class="text-gray-300 text-sm mb-4">Xodimlar uchun o'quv dasturi: performans va kirish
+                            imkoniyati bo'yicha amaliy mashg'ulot.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-400">2025-11-10</span>
+                            <a href="#" class="text-cyan-300 font-semibold">Batafsil →</a>
+                        </div>
+                    </article>
+
+                    <!-- Slide 4 (example) -->
+                    <article
+                            class="swiper-slide bg-gradient-to-br from-white/6 to-white/3 rounded-2xl p-6 border border-white/6 glow">
+                        <img src="https://images.unsplash.com/photo-1508898578281-774ac4893a11?auto=format&fit=crop&w=1200&q=80"
+                             alt="Yangilik 4" class="w-full h-40 object-cover rounded-xl mb-4">
+                        <div class="text-sm text-cyan-300 font-semibold mb-1">Yangilik</div>
+                        <h3 class="text-xl font-bold mb-2">Hamkorlik bo'yicha yangi shartnoma</h3>
+                        <p class="text-gray-300 text-sm mb-4">Xalqaro hamkorlik doirasida yangi loyihalar boshlandi.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-400">2025-10-30</span>
+                            <a href="#" class="text-cyan-300 font-semibold">Batafsil →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- navigation (news) -->
+            <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <button class="p-3 bg-white/6 rounded-full backdrop-blur hover:bg-white/10" id="newsPrev"
+                        aria-label="oldingi yangilik">
+                    ←
+                </button>
+            </div>
+            <div class="absolute -right-4 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <button class="p-3 bg-white/6 rounded-full backdrop-blur hover:bg-white/10" id="newsNext"
+                        aria-label="keyingi yangilik">
+                    →
+                </button>
+            </div>
+        </div>
+
+        <!-- optional: a small "View all" link -->
+        <div class="mt-6 text-right">
+            <a href="#" class="text-cyan-300 font-semibold">Barcha yangiliklar →</a>
+        </div>
+    </div>
+
+    <script>
+        // Initialize news swiper after the hamkor swiper initialization (if any)
+        const newsSwiper = new Swiper('.newsSwiper', {
+            autoplay: {delay: 3800, disableOnInteraction: false},
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 24,
+            breakpoints: {
+                640: {slidesPerView: 2, spaceBetween: 20},
+                1024: {slidesPerView: 3, spaceBetween: 24}
+            },
+            a11y: true
+        });
+
+        document.getElementById('newsPrev')?.addEventListener('click', () => newsSwiper.slidePrev());
+        document.getElementById('newsNext')?.addEventListener('click', () => newsSwiper.slideNext());
+    </script>
 </section>
 
 <!-- ===================== XODIMLAR (UPDATED PREMIUM CARDS) ===================== -->
 <section id="xodimlar" class="max-w-7xl mx-auto py-20 px-6 text-white">
-  <div class="flex items-center justify-between mb-8">
-    <h2 class="text-4xl font-bold text-cyan-300">Xodimlar</h2>
-    <p class="text-gray-300">Jamoamiz bilan tanishing — professional va ishtiyoqli.</p>
-  </div>
-
-  <div class="grid md:grid-cols-3 gap-10">
-    <!-- Card 1 -->
-    <div class="glow bg-gradient-to-br from-white/6 to-white/3 rounded-2xl overflow-hidden border border-white/6 p-0">
-      <div class="relative">
-        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover" alt="Xodim 1">
-        <div class="absolute -bottom-8 left-6">
-          <div class="w-20 h-20 rounded-full ring-4 ring-white/10 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=300&q=80" class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
-
-      <div class="px-6 pt-10 pb-8">
-        <h3 class="text-2xl font-semibold text-white">Jamshid Akbarov</h3>
-        <p class="text-cyan-200 mb-4">UX/UI Designer</p>
-        <p class="text-gray-300 text-sm mb-4">Ish tajribasi: 6 yil — mahsulot dizayni, prototiplash, foydalanuvchi tadqiqotlari.</p>
-
-        <div class="flex gap-3">
-          <!-- social icons (simple) -->
-          <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="mx-auto"><path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12a10 10 0 0015.47 9.13c.36-.21.53-.67.41-1.06a1 1 0 00-.97-.7h-1.02a5.5 5.5 0 01-5.5-5.5V12a1 1 0 00-1-1H8a1 1 0 00-1 1v2.87A10 10 0 0012 22c5.522 0 10-4.478 10-10z" fill="currentColor"/></svg>
-          </a>
-          <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.88v-6.99H8.898v-2.89h1.54V9.845c0-1.522.9-2.362 2.283-2.362.662 0 1.355.118 1.355.118v1.49h-.765c-.755 0-.99.468-.99.947v1.149h1.686l-.27 2.89h-1.416v6.99C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/></svg>
-          </a>
-        </div>
-      </div>
+    <div class="flex items-center justify-between mb-8">
+        <h2 class="text-4xl font-bold text-cyan-300">Xodimlar</h2>
+        <p class="text-gray-300">Jamoamiz bilan tanishing — professional va ishtiyoqli.</p>
     </div>
 
-    <!-- Card 2 -->
-    <div class="glow bg-gradient-to-br from-white/6 to-white/3 rounded-2xl overflow-hidden border border-white/6 p-0">
-      <div class="relative">
-        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover" alt="Xodim 2">
-        <div class="absolute -bottom-8 left-6">
-          <div class="w-20 h-20 rounded-full ring-4 ring-white/10 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80" class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
+    <div class="grid md:grid-cols-3 gap-10">
+        <!-- Card 1 -->
+        <div class="glow bg-gradient-to-br from-white/6 to-white/3 rounded-2xl overflow-hidden border border-white/6 p-0">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=800&q=80"
+                     class="w-full h-56 object-cover" alt="Xodim 1">
+                <div class="absolute -bottom-8 left-6">
+                    <div class="w-20 h-20 rounded-full ring-4 ring-white/10 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=300&q=80"
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
 
-      <div class="px-6 pt-10 pb-8">
-        <h3 class="text-2xl font-semibold text-white">Nigora Tursunova</h3>
-        <p class="text-cyan-200 mb-4">Product Manager</p>
-        <p class="text-gray-300 text-sm mb-4">Mahsulot strategiyasi, roadmap, va mijozlar bilan ishlash bo‘yicha ekspert.</p>
+            <div class="px-6 pt-10 pb-8">
+                <h3 class="text-2xl font-semibold text-white">Jamshid Akbarov</h3>
+                <p class="text-cyan-200 mb-4">UX/UI Designer</p>
+                <p class="text-gray-300 text-sm mb-4">Ish tajribasi: 6 yil — mahsulot dizayni, prototiplash,
+                    foydalanuvchi tadqiqotlari.</p>
 
-        <div class="flex gap-3">
-          <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="currentColor"/></svg>
-          </a>
-          <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12" stroke="currentColor" stroke-width="1.2"/></svg>
-          </a>
+                <div class="flex gap-3">
+                    <!-- social icons (simple) -->
+                    <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="mx-auto">
+                            <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12a10 10 0 0015.47 9.13c.36-.21.53-.67.41-1.06a1 1 0 00-.97-.7h-1.02a5.5 5.5 0 01-5.5-5.5V12a1 1 0 00-1-1H8a1 1 0 00-1 1v2.87A10 10 0 0012 22c5.522 0 10-4.478 10-10z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.88v-6.99H8.898v-2.89h1.54V9.845c0-1.522.9-2.362 2.283-2.362.662 0 1.355.118 1.355.118v1.49h-.765c-.755 0-.99.468-.99.947v1.149h1.686l-.27 2.89h-1.416v6.99C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- Card 2 -->
+        <div class="glow bg-gradient-to-br from-white/6 to-white/3 rounded-2xl overflow-hidden border border-white/6 p-0">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=80"
+                     class="w-full h-56 object-cover" alt="Xodim 2">
+                <div class="absolute -bottom-8 left-6">
+                    <div class="w-20 h-20 rounded-full ring-4 ring-white/10 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80"
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 pt-10 pb-8">
+                <h3 class="text-2xl font-semibold text-white">Nigora Tursunova</h3>
+                <p class="text-cyan-200 mb-4">Product Manager</p>
+                <p class="text-gray-300 text-sm mb-4">Mahsulot strategiyasi, roadmap, va mijozlar bilan ishlash bo‘yicha
+                    ekspert.</p>
+
+                <div class="flex gap-3">
+                    <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12" stroke="currentColor"
+                                  stroke-width="1.2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glow bg-gradient-to-br from-white/6 to-white/3 rounded-2xl overflow-hidden border border-white/6 p-0">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80"
+                     class="w-full h-56 object-cover" alt="Xodim 3">
+                <div class="absolute -bottom-8 left-6">
+                    <div class="w-20 h-20 rounded-full ring-4 ring-white/10 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=300&q=80"
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 pt-10 pb-8">
+                <h3 class="text-2xl font-semibold text-white">Orif Sobirov</h3>
+                <p class="text-cyan-200 mb-4">Frontend Engineer</p>
+                <p class="text-gray-300 text-sm mb-4">React / Tailwind / performance optimizatsiya va accessibility
+                    bo‘yicha mutaxassis.</p>
+
+                <div class="flex gap-3">
+                    <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2l7 5v10l-7 5-7-5V7l7-5z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 12h18" stroke="currentColor" stroke-width="1.2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Card 3 -->
-    <div class="glow bg-gradient-to-br from-white/6 to-white/3 rounded-2xl overflow-hidden border border-white/6 p-0">
-      <div class="relative">
-        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover" alt="Xodim 3">
-        <div class="absolute -bottom-8 left-6">
-          <div class="w-20 h-20 rounded-full ring-4 ring-white/10 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=300&q=80" class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
-
-      <div class="px-6 pt-10 pb-8">
-        <h3 class="text-2xl font-semibold text-white">Orif Sobirov</h3>
-        <p class="text-cyan-200 mb-4">Frontend Engineer</p>
-        <p class="text-gray-300 text-sm mb-4">React / Tailwind / performance optimizatsiya va accessibility bo‘yicha mutaxassis.</p>
-
-        <div class="flex gap-3">
-          <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2l7 5v10l-7 5-7-5V7l7-5z" fill="currentColor"/></svg>
-          </a>
-          <a href="#" class="p-2 rounded-md bg-white/6 hover:bg-white/12 transition">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 12h18" stroke="currentColor" stroke-width="1.2"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- ===================== HAMKORLAR CAROUSEL (ENHANCED) ===================== -->
 <section id="hamkor" class="py-20 bg-white/5 border-y border-white/10 text-center">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="flex items-center justify-between mb-6">
-      <h2 class="text-4xl font-bold mb-0 text-cyan-300">Hamkorlar</h2>
-      <p class="text-gray-300">Ishonchli va yetakchi hamkorlar bilan ishlaymiz</p>
-    </div>
-
-    <div class="relative">
-      <div class="swiper mySwiper w-full">
-        <div class="swiper-wrapper">
-          <!-- each slide shows a logo; logos are monochrome and become colored on hover -->
-          <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_Tesla_Motors.svg" alt="Tesla" /></div>
-          <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" /></div>
-          <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" /></div>
-          <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Google_Logo.svg" alt="Google" /></div>
-          <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/NASA_logo.svg" alt="NASA" /></div>
-          <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Dropbox_logo_2017.svg" alt="Dropbox" /></div>
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-4xl font-bold mb-0 text-cyan-300">Hamkorlar</h2>
+            <p class="text-gray-300">Ishonchli va yetakchi hamkorlar bilan ishlaymiz</p>
         </div>
-      </div>
 
-      <!-- left/right controls for accessibility -->
-      <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 hidden md:block">
-        <button class="p-3 bg-white/6 rounded-full backdrop-blur hover:bg-white/10" id="prevBtn" aria-label="previous">
-          ←
-        </button>
-      </div>
-      <div class="absolute -right-4 top-1/2 transform -translate-y-1/2 hidden md:block">
-        <button class="p-3 bg-white/6 rounded-full backdrop-blur hover:bg-white/10" id="nextBtn" aria-label="next">
-          →
-        </button>
-      </div>
+        <div class="relative">
+            <div class="swiper mySwiper w-full">
+                <div class="swiper-wrapper">
+                    <!-- each slide shows a logo; logos are monochrome and become colored on hover -->
+                    <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo"
+                                                                                    src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_Tesla_Motors.svg"
+                                                                                    alt="Tesla"/></div>
+                    <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo"
+                                                                                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                                                                                    alt="Apple"/></div>
+                    <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo"
+                                                                                    src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+                                                                                    alt="Microsoft"/></div>
+                    <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo"
+                                                                                    src="https://upload.wikimedia.org/wikipedia/commons/0/08/Google_Logo.svg"
+                                                                                    alt="Google"/></div>
+                    <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo"
+                                                                                    src="https://upload.wikimedia.org/wikipedia/commons/0/0e/NASA_logo.svg"
+                                                                                    alt="NASA"/></div>
+                    <div class="swiper-slide flex justify-center items-center"><img class="h-20 logo"
+                                                                                    src="https://upload.wikimedia.org/wikipedia/commons/8/87/Dropbox_logo_2017.svg"
+                                                                                    alt="Dropbox"/></div>
+                </div>
+            </div>
+
+            <!-- left/right controls for accessibility -->
+            <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <button class="p-3 bg-white/6 rounded-full backdrop-blur hover:bg-white/10" id="prevBtn"
+                        aria-label="previous">
+                    ←
+                </button>
+            </div>
+            <div class="absolute -right-4 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <button class="p-3 bg-white/6 rounded-full backdrop-blur hover:bg-white/10" id="nextBtn"
+                        aria-label="next">
+                    →
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script>
-    const swiper = new Swiper('.mySwiper', {
-      autoplay: { delay: 1700, disableOnInteraction: false },
-      loop: true,
-      slidesPerView: 3,
-      spaceBetween: 40,
-      breakpoints: {
-        0: { slidesPerView: 2, spaceBetween: 20 },
-        640: { slidesPerView: 3, spaceBetween: 30 },
-        1024: { slidesPerView: 4, spaceBetween: 40 }
-      },
-      a11y: true
-    });
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            autoplay: {delay: 1700, disableOnInteraction: false},
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 40,
+            breakpoints: {
+                0: {slidesPerView: 2, spaceBetween: 20},
+                640: {slidesPerView: 3, spaceBetween: 30},
+                1024: {slidesPerView: 4, spaceBetween: 40}
+            },
+            a11y: true
+        });
 
-    document.getElementById('prevBtn')?.addEventListener('click', ()=> swiper.slidePrev());
-    document.getElementById('nextBtn')?.addEventListener('click', ()=> swiper.slideNext());
-  </script>
+        document.getElementById('prevBtn')?.addEventListener('click', () => swiper.slidePrev());
+        document.getElementById('nextBtn')?.addEventListener('click', () => swiper.slideNext());
+    </script>
 </section>
 
 <!-- ===================== FOYDALI HAVOLALAR (GRID CARDS) ===================== -->
 <section id="havolalar" class="max-w-7xl mx-auto px-6 py-20 text-white">
-  <div class="flex items-center justify-between mb-8">
-    <h2 class="text-4xl font-bold text-cyan-300">Foydali Havolalar</h2>
-    <p class="text-gray-300">Tez koʻrinishdagi eng kerakli sahifalar</p>
-  </div>
+    <div class="flex items-center justify-between mb-8">
+        <h2 class="text-4xl font-bold text-cyan-300">Foydali Havolalar</h2>
+        <p class="text-gray-300">Tez koʻrinishdagi eng kerakli sahifalar</p>
+    </div>
 
-  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    <!-- link card -->
-    <a href="#" class="group block p-6 rounded-2xl bg-gradient-to-br from-white/4 to-white/6 border border-white/6 glow hover:from-cyan-700/10">
-      <div class="flex items-start gap-4">
-        <div class="p-3 rounded-lg bg-white/6 group-hover:bg-cyan-600/10">
-          <!-- icon -->
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v20" stroke="currentColor" stroke-width="1.6"/></svg>
-        </div>
-        <div>
-          <h4 class="font-semibold text-lg text-white">Foydali Sahifa 1</h4>
-          <p class="text-gray-300 text-sm mt-1">Qisqa tavsif — nima uchun foydali.</p>
-        </div>
-      </div>
-      <div class="mt-4 text-cyan-300 text-sm">Ochiq →</div>
-    </a>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- link card -->
+        <a href="#"
+           class="group block p-6 rounded-2xl bg-gradient-to-br from-white/4 to-white/6 border border-white/6 glow hover:from-cyan-700/10">
+            <div class="flex items-start gap-4">
+                <div class="p-3 rounded-lg bg-white/6 group-hover:bg-cyan-600/10">
+                    <!-- icon -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2v20" stroke="currentColor" stroke-width="1.6"/>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg text-white">Foydali Sahifa 1</h4>
+                    <p class="text-gray-300 text-sm mt-1">Qisqa tavsif — nima uchun foydali.</p>
+                </div>
+            </div>
+            <div class="mt-4 text-cyan-300 text-sm">Ochiq →</div>
+        </a>
 
-    <a href="#" class="group block p-6 rounded-2xl bg-gradient-to-br from-white/4 to-white/6 border border-white/6 glow">
-      <div class="flex items-start gap-4">
-        <div class="p-3 rounded-lg bg-white/6">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 12h18" stroke="currentColor" stroke-width="1.6"/></svg>
-        </div>
-        <div>
-          <h4 class="font-semibold text-lg text-white">Hujjatlar</h4>
-          <p class="text-gray-300 text-sm mt-1">Ariza, blankalar va boshqa shakllar.</p>
-        </div>
-      </div>
-      <div class="mt-4 text-cyan-300 text-sm">Koʻproq →</div>
-    </a>
+        <a href="#"
+           class="group block p-6 rounded-2xl bg-gradient-to-br from-white/4 to-white/6 border border-white/6 glow">
+            <div class="flex items-start gap-4">
+                <div class="p-3 rounded-lg bg-white/6">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 12h18" stroke="currentColor" stroke-width="1.6"/>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg text-white">Hujjatlar</h4>
+                    <p class="text-gray-300 text-sm mt-1">Ariza, blankalar va boshqa shakllar.</p>
+                </div>
+            </div>
+            <div class="mt-4 text-cyan-300 text-sm">Koʻproq →</div>
+        </a>
 
-    <a href="#" class="group block p-6 rounded-2xl bg-gradient-to-br from-white/4 to-white/6 border border-white/6 glow">
-      <div class="flex items-start gap-4">
-        <div class="p-3 rounded-lg bg-white/6">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="currentColor"/></svg>
-        </div>
-        <div>
-          <h4 class="font-semibold text-lg text-white">Qoʻllanmalar</h4>
-          <p class="text-gray-300 text-sm mt-1">Bosqichma-bosqich yordam va video darslar.</p>
-        </div>
-      </div>
-      <div class="mt-4 text-cyan-300 text-sm">Yordam olish →</div>
-    </a>
+        <a href="#"
+           class="group block p-6 rounded-2xl bg-gradient-to-br from-white/4 to-white/6 border border-white/6 glow">
+            <div class="flex items-start gap-4">
+                <div class="p-3 rounded-lg bg-white/6">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg text-white">Qoʻllanmalar</h4>
+                    <p class="text-gray-300 text-sm mt-1">Bosqichma-bosqich yordam va video darslar.</p>
+                </div>
+            </div>
+            <div class="mt-4 text-cyan-300 text-sm">Yordam olish →</div>
+        </a>
 
-    <a href="#" class="group block p-6 rounded-2xl bg-gradient-to-br from-white/4 to-white/6 border border-white/6 glow">
-      <div class="flex items-start gap-4">
-        <div class="p-3 rounded-lg bg-white/6">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.6"/></svg>
-        </div>
-        <div>
-          <h4 class="font-semibold text-lg text-white">Tez xizmatlar</h4>
-          <p class="text-gray-300 text-sm mt-1">Onlayn soʻrovlar va elektron xizmatlar.</p>
-        </div>
-      </div>
-      <div class="mt-4 text-cyan-300 text-sm">Batafsil →</div>
-    </a>
-  </div>
+        <a href="#"
+           class="group block p-6 rounded-2xl bg-gradient-to-br from-white/4 to-white/6 border border-white/6 glow">
+            <div class="flex items-start gap-4">
+                <div class="p-3 rounded-lg bg-white/6">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.6"/>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg text-white">Tez xizmatlar</h4>
+                    <p class="text-gray-300 text-sm mt-1">Onlayn soʻrovlar va elektron xizmatlar.</p>
+                </div>
+            </div>
+            <div class="mt-4 text-cyan-300 text-sm">Batafsil →</div>
+        </a>
+    </div>
 </section>
 
 <!-- ===================== NIZOM (PDF + SUMMARY CARD) ===================== -->
 <section id="nizom" class="py-20 bg-white/5 border-y border-white/10 text-white">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-4xl font-bold mb-4 text-cyan-300">Nizom</h2>
-    <p class="mb-6 text-gray-300">Tashkilotning rasmiy nizomi; quyida qisqacha mazmuni va PDF yuklab olish tugmasi mavjud.</p>
+    <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-4 text-cyan-300">Nizom</h2>
+        <p class="mb-6 text-gray-300">Tashkilotning rasmiy nizomi; quyida qisqacha mazmuni va PDF yuklab olish tugmasi
+            mavjud.</p>
 
-    <div class="grid md:grid-cols-3 gap-6 items-center">
-      <div class="md:col-span-2 bg-gradient-to-br from-white/5 to-white/3 p-6 rounded-2xl border border-white/6 glow">
-        <h3 class="text-xl font-semibold mb-2">Qisqacha mazmun</h3>
-        <ul class="text-gray-300 list-disc ml-5 space-y-2">
-          <li>Ma'lumot va maqsadlar.</li>
-          <li>Funktsiyalar va majburiyatlar.</li>
-          <li>Foydalanuvchi huquqlari va tartiblar.</li>
-        </ul>
-        <p class="text-gray-400 mt-4 text-sm">To'liq hujjatni PDF sifatida yuklab olish uchun quyidagi tugmani bosing.</p>
-      </div>
+        <div class="grid md:grid-cols-3 gap-6 items-center">
+            <div class="md:col-span-2 bg-gradient-to-br from-white/5 to-white/3 p-6 rounded-2xl border border-white/6 glow">
+                <h3 class="text-xl font-semibold mb-2">Qisqacha mazmun</h3>
+                <ul class="text-gray-300 list-disc ml-5 space-y-2">
+                    <li>Ma'lumot va maqsadlar.</li>
+                    <li>Funktsiyalar va majburiyatlar.</li>
+                    <li>Foydalanuvchi huquqlari va tartiblar.</li>
+                </ul>
+                <p class="text-gray-400 mt-4 text-sm">To'liq hujjatni PDF sifatida yuklab olish uchun quyidagi tugmani
+                    bosing.</p>
+            </div>
 
-      <div class="flex flex-col gap-4">
-        <a href="#" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black rounded-full text-center">📄 Nizomni Yuklab Olish</a>
-        <a href="#" class="px-6 py-3 border border-white/10 rounded-full text-center text-gray-300">🔍 Toʻliq ko'rish</a>
-      </div>
+            <div class="flex flex-col gap-4">
+                <a href="#" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black rounded-full text-center">📄
+                    Nizomni Yuklab Olish</a>
+                <a href="#" class="px-6 py-3 border border-white/10 rounded-full text-center text-gray-300">🔍 Toʻliq
+                    ko'rish</a>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ===================== CONTACT (LEFT INFO + RIGHT FORM) ===================== -->
 <section id="contact" class="max-w-7xl mx-auto px-6 py-20 text-white">
-  <div class="grid md:grid-cols-2 gap-10 items-start">
-    <!-- left info -->
-    <div class="space-y-6">
-      <h2 class="text-4xl font-bold text-cyan-300">Bogʻlanish</h2>
-      <p class="text-gray-300">Savol yoki takliflaringiz bo‘lsa, bizga yozing. Odatda 24 soat ichida javob beramiz.</p>
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+        <!-- left info -->
+        <div class="space-y-6">
+            <h2 class="text-4xl font-bold text-cyan-300">Bogʻlanish</h2>
+            <p class="text-gray-300">Savol yoki takliflaringiz bo‘lsa, bizga yozing. Odatda 24 soat ichida javob
+                beramiz.</p>
 
-      <div class="space-y-4">
-        <div class="flex items-start gap-4">
-          <div class="p-3 bg-white/6 rounded-lg">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 8l7-5 7 5v8l-7 5-7-5V8z" fill="currentColor"/></svg>
-          </div>
-          <div>
-            <div class="text-sm text-gray-300">Manzil</div>
-            <div class="text-white">Samarqand sh., Oʻrta ko'cha, 12</div>
-          </div>
+            <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-white/6 rounded-lg">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 8l7-5 7 5v8l-7 5-7-5V8z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-300">Manzil</div>
+                        <div class="text-white">Samarqand sh., Oʻrta ko'cha, 12</div>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-white/6 rounded-lg">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 5h18v14H3z" stroke="currentColor" stroke-width="1.2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-300">Elektron pochta</div>
+                        <div class="text-white">info@example.uz</div>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-white/6 rounded-lg">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 10v10h18V10L12 2 3 10z" stroke="currentColor" stroke-width="1.2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-300">Telefon</div>
+                        <div class="text-white">+998 71 200 00 00</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="flex items-start gap-4">
-          <div class="p-3 bg-white/6 rounded-lg">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v14H3z" stroke="currentColor" stroke-width="1.2"/></svg>
-          </div>
-          <div>
-            <div class="text-sm text-gray-300">Elektron pochta</div>
-            <div class="text-white">info@example.uz</div>
-          </div>
+        <!-- right form -->
+        <div class="bg-gradient-to-br from-white/6 to-white/3 rounded-2xl p-6 border border-white/6 glow">
+            <form class="grid gap-4">
+                <input class="p-4 bg-transparent border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                       type="text" placeholder="Ismingiz *" required>
+                <input class="p-4 bg-transparent border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                       type="email" placeholder="Email *" required>
+                <input class="p-4 bg-transparent border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                       type="text" placeholder="Mavzu">
+                <textarea
+                        class="p-4 bg-transparent border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                        rows="5" placeholder="Xabar..."></textarea>
+                <div class="flex items-center gap-3">
+                    <button type="submit" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black rounded-xl">
+                        Yuborish
+                    </button>
+                    <button type="reset" class="px-4 py-3 border border-white/10 rounded-xl text-gray-300">Tozalash
+                    </button>
+                </div>
+                <p class="text-sm text-gray-400 mt-2">Shaxsiy ma'lumotlar sizning roziligingizsiz oshkor qilinmaydi.</p>
+            </form>
         </div>
-
-        <div class="flex items-start gap-4">
-          <div class="p-3 bg-white/6 rounded-lg">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 10v10h18V10L12 2 3 10z" stroke="currentColor" stroke-width="1.2"/></svg>
-          </div>
-          <div>
-            <div class="text-sm text-gray-300">Telefon</div>
-            <div class="text-white">+998 71 200 00 00</div>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <!-- right form -->
-    <div class="bg-gradient-to-br from-white/6 to-white/3 rounded-2xl p-6 border border-white/6 glow">
-      <form class="grid gap-4">
-        <input class="p-4 bg-transparent border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400" type="text" placeholder="Ismingiz *" required>
-        <input class="p-4 bg-transparent border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400" type="email" placeholder="Email *" required>
-        <input class="p-4 bg-transparent border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400" type="text" placeholder="Mavzu">
-        <textarea class="p-4 bg-transparent border border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400" rows="5" placeholder="Xabar..."></textarea>
-        <div class="flex items-center gap-3">
-          <button type="submit" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black rounded-xl">Yuborish</button>
-          <button type="reset" class="px-4 py-3 border border-white/10 rounded-xl text-gray-300">Tozalash</button>
-        </div>
-        <p class="text-sm text-gray-400 mt-2">Shaxsiy ma'lumotlar sizning roziligingizsiz oshkor qilinmaydi.</p>
-      </form>
-    </div>
-  </div>
 </section>
 
 <!-- ===================== FOOTER (MODERN) ===================== -->
 <footer class="bg-black/20 border-t border-white/10 text-white py-10">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-    <div>
-      <div class="text-2xl font-bold text-cyan-300">LOGO</div>
-      <p class="text-gray-300 mt-3">Zamonaviy Platforma — Eng oxirgi UI/UX standartlari asosida yaratilgan ekotizim.</p>
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div>
+            <div class="text-2xl font-bold text-cyan-300"><a href="index.html"><img src="logo.png" alt="logo"
+                                                                                    width="60"></a></div>
+            <p class="text-gray-300 mt-3">Zamonaviy Platforma — Eng oxirgi UI/UX standartlari asosida yaratilgan
+                ekotizim.</p>
+        </div>
+
+        <div class="flex justify-between">
+            <div>
+                <h4 class="font-semibold mb-3 text-gray-200">Havolalar</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#intro" class="hover:text-cyan-300">Intro</a></li>
+                    <li><a href="#xodimlar" class="hover:text-cyan-300">Xodimlar</a></li>
+                    <li><a href="#hamkor" class="hover:text-cyan-300">Hamkorlar</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3 text-gray-200">Kontakt</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>info@example.uz</li>
+                    <li>+998 71 200 00 00</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="font-semibold mb-3 text-gray-200">Yangiliklar</h4>
+            <p class="text-gray-400 text-sm mb-4">Yangiliklar va yangilanishlar haqida xabar olmoqchi boʻlsangiz,
+                emailingizni qoldiring.</p>
+            <form class="flex gap-2">
+                <input type="email" placeholder="Emailingiz"
+                       class="flex-1 p-3 rounded-xl bg-white/6 border border-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                <button class="px-4 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black">Obuna</button>
+            </form>
+        </div>
     </div>
 
-    <div class="flex justify-between">
-      <div>
-        <h4 class="font-semibold mb-3 text-gray-200">Havolalar</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li><a href="#intro" class="hover:text-cyan-300">Intro</a></li>
-          <li><a href="#xodimlar" class="hover:text-cyan-300">Xodimlar</a></li>
-          <li><a href="#hamkor" class="hover:text-cyan-300">Hamkorlar</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold mb-3 text-gray-200">Kontakt</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li>info@example.uz</li>
-          <li>+998 71 200 00 00</li>
-        </ul>
-      </div>
+    <div class="max-w-7xl mx-auto px-6 mt-8 text-center text-gray-400">
+        © 2025 – Barcha huquqlar himoyalangan
     </div>
-
-    <div>
-      <h4 class="font-semibold mb-3 text-gray-200">Yangiliklar</h4>
-      <p class="text-gray-400 text-sm mb-4">Yangiliklar va yangilanishlar haqida xabar olmoqchi boʻlsangiz, emailingizni qoldiring.</p>
-      <form class="flex gap-2">
-        <input type="email" placeholder="Emailingiz" class="flex-1 p-3 rounded-xl bg-white/6 border border-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400">
-        <button class="px-4 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black">Obuna</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-6 mt-8 text-center text-gray-400">
-    © 2025 – Barcha huquqlar himoyalangan
-  </div>
 </footer>
 
 </body>
